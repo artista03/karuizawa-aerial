@@ -7,7 +7,7 @@
   <meta name="description" content="軽井沢を拠点にしたドローン空撮サービス。4K映像で、軽井沢の自然・風景・日常を空から記録します。">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Noto+Sans+SC:wght@300;400;700&family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -31,12 +31,19 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__links" id="navLinks">
-        <li><a href="#services" class="nav__link">サービス</a></li>
-        <li><a href="#videos" class="nav__link">サンプル動画</a></li>
-        <li><a href="#process" class="nav__link">流れ</a></li>
-        <li><a href="#pricing" class="nav__link">料金</a></li>
-        <li><a href="#contact" class="nav__cta">お問い合わせ</a></li>
+        <li><a href="#services" class="nav__link" data-i18n="nav.services">サービス</a></li>
+        <li><a href="#videos" class="nav__link" data-i18n="nav.videos">サンプル動画</a></li>
+        <li><a href="#process" class="nav__link" data-i18n="nav.process">流れ</a></li>
+        <li><a href="#pricing" class="nav__link" data-i18n="nav.pricing">料金</a></li>
+        <li><a href="#contact" class="nav__cta" data-i18n="nav.contact">お問い合わせ</a></li>
       </ul>
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="jp">JP</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="zh">中文</button>
+      </div>
     </div>
   </nav>
 
@@ -46,20 +53,20 @@
       <div class="hero__particles" id="particles"></div>
     </div>
     <div class="hero__content">
-      <p class="hero__sub hero-anim" style="--delay:0.2s">軽井沢を、空から。</p>
+      <p class="hero__sub hero-anim" style="--delay:0.2s" data-i18n="hero.sub">軽井沢を、空から。</p>
       <h1 class="hero__title" id="heroTitle">
         <span class="hero__word">
           <span class="hero__char" style="--i:0">K</span><span class="hero__char" style="--i:1">A</span><span class="hero__char" style="--i:2">R</span><span class="hero__char" style="--i:3">U</span><span class="hero__char" style="--i:4">I</span><span class="hero__char" style="--i:5">Z</span><span class="hero__char" style="--i:6">A</span><span class="hero__char" style="--i:7">W</span><span class="hero__char" style="--i:8">A</span>
         </span><br>
         <span class="hero__sub-word hero-anim" style="--delay:1.4s">AERIAL</span>
       </h1>
-      <p class="hero__desc hero-anim" style="--delay:0.9s">
+      <p class="hero__desc hero-anim" style="--delay:0.9s" data-i18n-html="hero.desc">
         軽井沢を拠点に、DJI Mini 5 Pro で空撮しています。<br>
         この街の自然と日常を、空からの映像で届けます。
       </p>
       <div class="hero__btns hero-anim" style="--delay:1.2s">
-        <a href="#contact" class="btn btn--primary">無料相談する</a>
-        <a href="#videos" class="btn btn--ghost">サンプル動画を見る</a>
+        <a href="#contact" class="btn btn--primary" data-i18n="hero.btn.primary">無料相談する</a>
+        <a href="#videos" class="btn btn--ghost" data-i18n="hero.btn.ghost">サンプル動画を見る</a>
       </div>
     </div>
     <div class="hero__scroll">
@@ -95,19 +102,19 @@
       <div class="stats__grid">
         <div class="stats__item">
           <span class="stats__num">4</span><span class="stats__unit">K</span>
-          <p>最高画質で撮影</p>
+          <p data-i18n="stats.4k">最高画質で撮影</p>
         </div>
         <div class="stats__item">
           <span class="stats__num">33</span><span class="stats__unit">分</span>
-          <p>最大飛行時間</p>
+          <p data-i18n="stats.33">最大飛行時間</p>
         </div>
         <div class="stats__item">
           <span class="stats__num">24</span><span class="stats__unit">h</span>
-          <p>以内にご返信</p>
+          <p data-i18n="stats.24">以内にご返信</p>
         </div>
         <div class="stats__item">
           <span class="stats__num">全</span><span class="stats__unit">力</span>
-          <p>お客様のご要望に応えます</p>
+          <p data-i18n="stats.all">お客様のご要望に応えます</p>
         </div>
       </div>
     </div>
@@ -117,9 +124,9 @@
   <section class="services skew-top" id="services">
     <div class="container">
       <div class="section-header">
-        <p class="section-label">SERVICES</p>
-        <h2 class="section-title">できること</h2>
-        <p class="section-desc">こんなことができます。詳しくはお気軽にご相談ください。</p>
+        <p class="section-label" data-i18n="services.label">SERVICES</p>
+        <h2 class="section-title" data-i18n="services.title">できること</h2>
+        <p class="section-desc" data-i18n="services.desc">こんなことができます。詳しくはお気軽にご相談ください。</p>
       </div>
       <div class="services__grid">
 
@@ -137,8 +144,8 @@
               <circle cx="32" cy="54" r="4" fill="currentColor"/>
             </svg>
           </div>
-          <h3>空撮・映像撮影</h3>
-          <p>4K対応のドローンで空から撮影します。どんな映像が欲しいか、まずお話を聞かせてください。一緒に考えます。</p>
+          <h3 data-i18n="s1.title">空撮・映像撮影</h3>
+          <p data-i18n="s1.desc">4K対応のドローンで空から撮影します。どんな映像が欲しいか、まずお話を聞かせてください。一緒に考えます。</p>
         </div>
 
         <div class="service-card">
@@ -149,8 +156,8 @@
               <circle cx="32" cy="32" r="5" fill="currentColor"/>
             </svg>
           </div>
-          <h3>不動産・建物の撮影</h3>
-          <p>物件や土地を空から撮影します。どう使いたいか教えてもらえると、撮り方の提案ができます。</p>
+          <h3 data-i18n="s2.title">不動産・建物の撮影</h3>
+          <p data-i18n="s2.desc">物件や土地を空から撮影します。どう使いたいか教えてもらえると、撮り方の提案ができます。</p>
         </div>
 
         <div class="service-card">
@@ -161,8 +168,8 @@
               <circle cx="32" cy="32" r="6" fill="currentColor"/>
             </svg>
           </div>
-          <h3>イベント・思い出の記録</h3>
-          <p>野外イベントや家族の記念日など、特別な瞬間を空から残します。「こんな撮影できる？」は気軽に聞いてください。</p>
+          <h3 data-i18n="s3.title">イベント・思い出の記録</h3>
+          <p data-i18n="s3.desc">野外イベントや家族の記念日など、特別な瞬間を空から残します。「こんな撮影できる？」は気軽に聞いてください。</p>
         </div>
 
         <div class="service-card">
@@ -173,8 +180,8 @@
               <circle cx="32" cy="28" r="3" fill="currentColor"/>
             </svg>
           </div>
-          <h3>自然・風景の空撮</h3>
-          <p>山・森・田んぼ・海など、地上では撮れない景色を届けます。長野県周辺の自然撮影が特に得意です。</p>
+          <h3 data-i18n="s4.title">自然・風景の空撮</h3>
+          <p data-i18n="s4.desc">山・森・田んぼ・海など、地上では撮れない景色を届けます。長野県周辺の自然撮影が特に得意です。</p>
         </div>
 
         <div class="service-card">
@@ -184,8 +191,8 @@
               <path d="M16 52c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
             </svg>
           </div>
-          <h3>SNS・YouTube用の素材</h3>
-          <p>インスタやYouTube用に空撮素材を撮影します。編集の仕上げ方はご要望に合わせて相談しながら決めましょう。</p>
+          <h3 data-i18n="s5.title">SNS・YouTube用の素材</h3>
+          <p data-i18n="s5.desc">インスタやYouTube用に空撮素材を撮影します。編集の仕上げ方はご要望に合わせて相談しながら決めましょう。</p>
         </div>
 
         <div class="service-card">
@@ -198,8 +205,8 @@
               <line x1="25" y1="46" x2="39" y2="46" stroke="currentColor" stroke-width="2"/>
             </svg>
           </div>
-          <h3>現地同行・ロケハン</h3>
-          <p>ドローンと機材を積んでModel Yで現地へ伺います。「どこで撮れば一番映えるか」から一緒に考えます。軽井沢・御代田・佐久周辺はお気軽にどうぞ。</p>
+          <h3 data-i18n="s6.title">現地同行・ロケハン</h3>
+          <p data-i18n="s6.desc">ドローンと機材を積んでModel Yで現地へ伺います。「どこで撮れば一番映えるか」から一緒に考えます。軽井沢・御代田・佐久周辺はお気軽にどうぞ。</p>
         </div>
 
       </div>
@@ -210,81 +217,81 @@
   <section class="videos" id="videos">
     <div class="container">
       <div class="section-header">
-        <p class="section-label">SAMPLE WORKS</p>
-        <h2 class="section-title">撮影サンプル</h2>
-        <p class="section-desc">実際の空撮映像をご覧ください</p>
+        <p class="section-label" data-i18n="videos.label">SAMPLE WORKS</p>
+        <h2 class="section-title" data-i18n="videos.title">撮影サンプル</h2>
+        <p class="section-desc" data-i18n="videos.desc">実際の空撮映像をご覧ください</p>
       </div>
       <div class="videos__grid">
         <div class="video-item">
-          <a class="video-item__thumb" href="https://www.youtube.com/watch?v=CBrs4OWppng" target="_blank" rel="noopener" aria-label="浅間山 空撮を見る">
+          <a class="video-item__thumb" href="https://www.youtube.com/watch?v=CBrs4OWppng" target="_blank" rel="noopener">
             <img src="https://img.youtube.com/vi/CBrs4OWppng/maxresdefault.jpg" alt="浅間山 空撮">
             <div class="video-item__play">
               <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg"><path d="M66.52 7.74A8.55 8.55 0 0 0 60.63 1.8C55.31 0 34 0 34 0S12.69 0 7.37 1.8A8.55 8.55 0 0 0 1.48 7.74C0 13.07 0 24 0 24s0 10.93 1.48 16.26a8.55 8.55 0 0 0 5.89 5.94C12.69 48 34 48 34 48s21.31 0 26.63-1.8a8.55 8.55 0 0 0 5.89-5.94C68 34.93 68 24 68 24s0-10.93-1.48-16.26z" fill="#ff0000"/><path d="M27 34l18-10-18-10v20z" fill="#fff"/></svg>
             </div>
           </a>
           <div class="video-item__info">
-            <h4>浅間山 空撮</h4>
-            <p>自然・風景</p>
+            <h4 data-i18n="v1.title">浅間山 空撮</h4>
+            <p data-i18n="v1.cat">自然・風景</p>
           </div>
         </div>
         <div class="video-item">
-          <a class="video-item__thumb" href="https://www.youtube.com/watch?v=6Z6gVdSHeuY" target="_blank" rel="noopener" aria-label="軽井沢の森 低空飛行を見る">
+          <a class="video-item__thumb" href="https://www.youtube.com/watch?v=6Z6gVdSHeuY" target="_blank" rel="noopener">
             <img src="https://img.youtube.com/vi/6Z6gVdSHeuY/maxresdefault.jpg" alt="軽井沢の森 低空飛行">
             <div class="video-item__play">
               <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg"><path d="M66.52 7.74A8.55 8.55 0 0 0 60.63 1.8C55.31 0 34 0 34 0S12.69 0 7.37 1.8A8.55 8.55 0 0 0 1.48 7.74C0 13.07 0 24 0 24s0 10.93 1.48 16.26a8.55 8.55 0 0 0 5.89 5.94C12.69 48 34 48 34 48s21.31 0 26.63-1.8a8.55 8.55 0 0 0 5.89-5.94C68 34.93 68 24 68 24s0-10.93-1.48-16.26z" fill="#ff0000"/><path d="M27 34l18-10-18-10v20z" fill="#fff"/></svg>
             </div>
           </a>
           <div class="video-item__info">
-            <h4>森の低空飛行 | 軽井沢</h4>
-            <p>自然・低空</p>
+            <h4 data-i18n="v2.title">森の低空飛行 | 軽井沢</h4>
+            <p data-i18n="v2.cat">自然・低空</p>
           </div>
         </div>
         <div class="video-item">
-          <a class="video-item__thumb" href="https://www.youtube.com/watch?v=E-tr850SHys" target="_blank" rel="noopener" aria-label="日常 空撮を見る">
+          <a class="video-item__thumb" href="https://www.youtube.com/watch?v=E-tr850SHys" target="_blank" rel="noopener">
             <img src="https://img.youtube.com/vi/E-tr850SHys/maxresdefault.jpg" alt="日常 空撮">
             <div class="video-item__play">
               <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg"><path d="M66.52 7.74A8.55 8.55 0 0 0 60.63 1.8C55.31 0 34 0 34 0S12.69 0 7.37 1.8A8.55 8.55 0 0 0 1.48 7.74C0 13.07 0 24 0 24s0 10.93 1.48 16.26a8.55 8.55 0 0 0 5.89 5.94C12.69 48 34 48 34 48s21.31 0 26.63-1.8a8.55 8.55 0 0 0 5.89-5.94C68 34.93 68 24 68 24s0-10.93-1.48-16.26z" fill="#ff0000"/><path d="M27 34l18-10-18-10v20z" fill="#fff"/></svg>
             </div>
           </a>
           <div class="video-item__info">
-            <h4>日常ドローン撮影</h4>
-            <p>ライフスタイル・家族</p>
+            <h4 data-i18n="v3.title">日常ドローン撮影</h4>
+            <p data-i18n="v3.cat">ライフスタイル・家族</p>
           </div>
         </div>
         <div class="video-item">
-          <a class="video-item__thumb" href="https://www.youtube.com/watch?v=4gARmBRDW3c" target="_blank" rel="noopener" aria-label="プリンスプラザ 軽井沢を見る">
+          <a class="video-item__thumb" href="https://www.youtube.com/watch?v=4gARmBRDW3c" target="_blank" rel="noopener">
             <img src="https://img.youtube.com/vi/4gARmBRDW3c/maxresdefault.jpg" alt="プリンスプラザ 軽井沢 空撮">
             <div class="video-item__play">
               <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg"><path d="M66.52 7.74A8.55 8.55 0 0 0 60.63 1.8C55.31 0 34 0 34 0S12.69 0 7.37 1.8A8.55 8.55 0 0 0 1.48 7.74C0 13.07 0 24 0 24s0 10.93 1.48 16.26a8.55 8.55 0 0 0 5.89 5.94C12.69 48 34 48 34 48s21.31 0 26.63-1.8a8.55 8.55 0 0 0 5.89-5.94C68 34.93 68 24 68 24s0-10.93-1.48-16.26z" fill="#ff0000"/><path d="M27 34l18-10-18-10v20z" fill="#fff"/></svg>
             </div>
           </a>
           <div class="video-item__info">
-            <h4>プリンスプラザ 軽井沢</h4>
-            <p>施設・建築</p>
+            <h4 data-i18n="v4.title">プリンスプラザ 軽井沢</h4>
+            <p data-i18n="v4.cat">施設・建築</p>
           </div>
         </div>
         <div class="video-item">
-          <a class="video-item__thumb" href="https://www.youtube.com/watch?v=EqJP58LJWWc" target="_blank" rel="noopener" aria-label="Tesla Model Y 空撮を見る">
+          <a class="video-item__thumb" href="https://www.youtube.com/watch?v=EqJP58LJWWc" target="_blank" rel="noopener">
             <img src="https://img.youtube.com/vi/EqJP58LJWWc/maxresdefault.jpg" alt="Tesla Model Y & Supercharger 空撮">
             <div class="video-item__play">
               <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg"><path d="M66.52 7.74A8.55 8.55 0 0 0 60.63 1.8C55.31 0 34 0 34 0S12.69 0 7.37 1.8A8.55 8.55 0 0 0 1.48 7.74C0 13.07 0 24 0 24s0 10.93 1.48 16.26a8.55 8.55 0 0 0 5.89 5.94C12.69 48 34 48 34 48s21.31 0 26.63-1.8a8.55 8.55 0 0 0 5.89-5.94C68 34.93 68 24 68 24s0-10.93-1.48-16.26z" fill="#ff0000"/><path d="M27 34l18-10-18-10v20z" fill="#fff"/></svg>
             </div>
           </a>
           <div class="video-item__info">
-            <h4>Tesla Model Y &amp; Supercharger</h4>
-            <p>空撮・ライフスタイル</p>
+            <h4 data-i18n="v5.title">Tesla Model Y &amp; Supercharger</h4>
+            <p data-i18n="v5.cat">空撮・ライフスタイル</p>
           </div>
         </div>
         <div class="video-item">
-          <a class="video-item__thumb" href="https://www.youtube.com/watch?v=G_jRZfaMSTo" target="_blank" rel="noopener" aria-label="ActiveTrack 軽井沢を見る">
+          <a class="video-item__thumb" href="https://www.youtube.com/watch?v=G_jRZfaMSTo" target="_blank" rel="noopener">
             <img src="https://img.youtube.com/vi/G_jRZfaMSTo/maxresdefault.jpg" alt="DJI Mini 5 Pro ActiveTrack 軽井沢">
             <div class="video-item__play">
               <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg"><path d="M66.52 7.74A8.55 8.55 0 0 0 60.63 1.8C55.31 0 34 0 34 0S12.69 0 7.37 1.8A8.55 8.55 0 0 0 1.48 7.74C0 13.07 0 24 0 24s0 10.93 1.48 16.26a8.55 8.55 0 0 0 5.89 5.94C12.69 48 34 48 34 48s21.31 0 26.63-1.8a8.55 8.55 0 0 0 5.89-5.94C68 34.93 68 24 68 24s0-10.93-1.48-16.26z" fill="#ff0000"/><path d="M27 34l18-10-18-10v20z" fill="#fff"/></svg>
             </div>
           </a>
           <div class="video-item__info">
-            <h4>ActiveTrack | プリンスプラザ 軽井沢</h4>
-            <p>モーショントラッキング</p>
+            <h4 data-i18n="v6.title">ActiveTrack | プリンスプラザ 軽井沢</h4>
+            <p data-i18n="v6.cat">モーショントラッキング</p>
           </div>
         </div>
       </div>
@@ -295,37 +302,37 @@
   <section class="process" id="process">
     <div class="container">
       <div class="section-header">
-        <p class="section-label">PROCESS</p>
-        <h2 class="section-title">だいたいの流れ</h2>
-        <p class="section-desc">こんな感じで進めています。状況に合わせて柔軟に対応します。</p>
+        <p class="section-label" data-i18n="process.label">PROCESS</p>
+        <h2 class="section-title" data-i18n="process.title">だいたいの流れ</h2>
+        <p class="section-desc" data-i18n="process.desc">こんな感じで進めています。状況に合わせて柔軟に対応します。</p>
       </div>
       <div class="process__steps">
         <div class="process-step">
           <div class="process-step__num">01</div>
           <div class="process-step__content">
-            <h3>まず話しましょう</h3>
-            <p>「こんな映像が欲しい」「こんな場所で撮りたい」など、ざっくりした内容でOKです。フォームからどうぞ。</p>
+            <h3 data-i18n="p1.title">まず話しましょう</h3>
+            <p data-i18n="p1.desc">「こんな映像が欲しい」「こんな場所で撮りたい」など、ざっくりした内容でOKです。フォームからどうぞ。</p>
           </div>
         </div>
         <div class="process-step">
           <div class="process-step__num">02</div>
           <div class="process-step__content">
-            <h3>場所と内容を確認する</h3>
-            <p>撮影場所がドローンを飛ばせるか確認します。飛行申請が必要な場合は一緒に考えます。難しい場合は正直にお伝えします。</p>
+            <h3 data-i18n="p2.title">場所と内容を確認する</h3>
+            <p data-i18n="p2.desc">撮影場所がドローンを飛ばせるか確認します。飛行申請が必要な場合は一緒に考えます。難しい場合は正直にお伝えします。</p>
           </div>
         </div>
         <div class="process-step">
           <div class="process-step__num">03</div>
           <div class="process-step__content">
-            <h3>撮影する</h3>
-            <p>当日は天気や風を見ながら、できる限り良い映像を撮ります。うまくいかなかった部分も包み隠さず共有します。</p>
+            <h3 data-i18n="p3.title">撮影する</h3>
+            <p data-i18n="p3.desc">当日は天気や風を見ながら、できる限り良い映像を撮ります。うまくいかなかった部分も包み隠さず共有します。</p>
           </div>
         </div>
         <div class="process-step">
           <div class="process-step__num">04</div>
           <div class="process-step__content">
-            <h3>お渡しする</h3>
-            <p>素材そのまま、または編集してお渡しします。どんな仕上がりにしたいか、一緒に決めましょう。</p>
+            <h3 data-i18n="p4.title">お渡しする</h3>
+            <p data-i18n="p4.desc">素材そのまま、または編集してお渡しします。どんな仕上がりにしたいか、一緒に決めましょう。</p>
           </div>
         </div>
       </div>
@@ -336,28 +343,28 @@
   <section class="pricing" id="pricing">
     <div class="container">
       <div class="section-header">
-        <p class="section-label">PRICING</p>
-        <h2 class="section-title">料金について</h2>
-        <p class="section-desc">撮影内容・場所・時間によって変わるため、まずはお気軽にご相談ください。一緒に考えます。</p>
+        <p class="section-label" data-i18n="pricing.label">PRICING</p>
+        <h2 class="section-title" data-i18n="pricing.title">料金について</h2>
+        <p class="section-desc" data-i18n="pricing.desc">撮影内容・場所・時間によって変わるため、まずはお気軽にご相談ください。一緒に考えます。</p>
       </div>
       <div class="pricing__consult">
         <div class="pricing__consult-items">
           <div class="pricing__consult-item">
-            <h4>撮影のみ</h4>
-            <p>4K素材をそのままお渡し。自社で編集される方や、素材だけほしい方向け。</p>
+            <h4 data-i18n="price1.title">撮影のみ</h4>
+            <p data-i18n="price1.desc">4K素材をそのままお渡し。自社で編集される方や、素材だけほしい方向け。</p>
           </div>
           <div class="pricing__consult-item">
-            <h4>撮影 ＋ 編集</h4>
-            <p>カラーグレーディング・BGM・テロップまで込みで納品。完成映像としてすぐ使えます。</p>
+            <h4 data-i18n="price2.title">撮影 ＋ 編集</h4>
+            <p data-i18n="price2.desc">カラーグレーディング・BGM・テロップまで込みで納品。完成映像としてすぐ使えます。</p>
           </div>
           <div class="pricing__consult-item">
-            <h4>その他・なんでも</h4>
-            <p>「こんなことできる？」という相談大歓迎。できないことは正直にお伝えします。</p>
+            <h4 data-i18n="price3.title">その他・なんでも</h4>
+            <p data-i18n="price3.desc">「こんなことできる？」という相談大歓迎。できないことは正直にお伝えします。</p>
           </div>
         </div>
         <div class="pricing__consult-cta">
-          <p class="pricing__consult-note">料金は撮影場所・時間・内容をお聞きしてから<br>個別にご提案します。まず話しましょう。</p>
-          <a href="#contact" class="btn btn--primary">無料で相談する</a>
+          <p class="pricing__consult-note" data-i18n="pricing.note">料金は撮影場所・時間・内容をお聞きしてから個別にご提案します。まず話しましょう。</p>
+          <a href="#contact" class="btn btn--primary" data-i18n="pricing.cta">無料で相談する</a>
         </div>
       </div>
     </div>
@@ -367,59 +374,59 @@
   <section class="contact" id="contact">
     <div class="container">
       <div class="section-header">
-        <p class="section-label">CONTACT</p>
-        <h2 class="section-title">お問い合わせ</h2>
-        <p class="section-desc">まずはお気軽にご相談ください。24時間以内にご返信します。</p>
+        <p class="section-label" data-i18n="contact.label">CONTACT</p>
+        <h2 class="section-title" data-i18n="contact.title">お問い合わせ</h2>
+        <p class="section-desc" data-i18n="contact.desc">まずはお気軽にご相談ください。24時間以内にご返信します。</p>
       </div>
       <div class="contact__wrapper">
         <form class="contact__form" id="contactForm" action="https://formspree.io/f/xreaawve" method="POST">
           <div class="form-group">
-            <label for="name">お名前 <span class="required">*</span></label>
-            <input type="text" id="name" name="name" placeholder="山田 太郎" required>
+            <label for="name"><span data-i18n="form.name.label">お名前</span> <span class="required">*</span></label>
+            <input type="text" id="name" name="name" data-i18n-ph="form.name.placeholder" placeholder="山田 太郎" required>
           </div>
           <div class="form-group">
-            <label for="company">会社名</label>
-            <input type="text" id="company" name="company" placeholder="株式会社〇〇">
+            <label for="company"><span data-i18n="form.company.label">会社名</span></label>
+            <input type="text" id="company" name="company" data-i18n-ph="form.company.placeholder" placeholder="株式会社〇〇">
           </div>
           <div class="form-group">
-            <label for="email">メールアドレス <span class="required">*</span></label>
-            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            <label for="email"><span data-i18n="form.email.label">メールアドレス</span> <span class="required">*</span></label>
+            <input type="email" id="email" name="email" data-i18n-ph="form.email.placeholder" placeholder="example@email.com" required>
           </div>
           <div class="form-group">
-            <label for="phone">電話番号</label>
-            <input type="tel" id="phone" name="phone" placeholder="090-0000-0000">
+            <label for="phone"><span data-i18n="form.phone.label">電話番号</span></label>
+            <input type="tel" id="phone" name="phone" data-i18n-ph="form.phone.placeholder" placeholder="090-0000-0000">
           </div>
           <div class="form-group">
-            <label for="service">ご希望のサービス</label>
+            <label for="service"><span data-i18n="form.service.label">ご希望のサービス</span></label>
             <select id="service" name="service">
-              <option value="">選択してください</option>
-              <option>映像・CM制作</option>
-              <option>不動産・建築撮影</option>
-              <option>イベント・式典記録</option>
-              <option>施設・インフラ点検</option>
-              <option>観光地・自然撮影</option>
-              <option>SNS・YouTube素材</option>
-              <option>現地同行・ロケハン</option>
-              <option>撮影 ＋ 現地同行（出張プラン）</option>
-              <option>その他</option>
+              <option value="" data-i18n="form.service.0">選択してください</option>
+              <option data-i18n="form.service.1">映像・CM制作</option>
+              <option data-i18n="form.service.2">不動産・建築撮影</option>
+              <option data-i18n="form.service.3">イベント・式典記録</option>
+              <option data-i18n="form.service.4">施設・インフラ点検</option>
+              <option data-i18n="form.service.5">観光地・自然撮影</option>
+              <option data-i18n="form.service.6">SNS・YouTube素材</option>
+              <option data-i18n="form.service.7">現地同行・ロケハン</option>
+              <option data-i18n="form.service.8">撮影 ＋ 現地同行（出張プラン）</option>
+              <option data-i18n="form.service.9">その他</option>
             </select>
           </div>
           <div class="form-group form-group--full">
-            <label for="message">お問い合わせ内容 <span class="required">*</span></label>
-            <textarea id="message" name="message" rows="5" placeholder="撮影場所・日程・ご予算などをお聞かせください" required></textarea>
+            <label for="message"><span data-i18n="form.message.label">お問い合わせ内容</span> <span class="required">*</span></label>
+            <textarea id="message" name="message" rows="5" data-i18n-ph="form.message.placeholder" placeholder="撮影場所・日程・ご予算などをお聞かせください" required></textarea>
           </div>
           <div class="form-group form-group--full">
-            <button type="submit" class="btn btn--primary btn--full">送信する</button>
+            <button type="submit" class="btn btn--primary btn--full" data-i18n="form.submit">送信する</button>
           </div>
         </form>
         <div class="contact__info">
           <div class="contact__info-item">
-            <h4>活動エリア</h4>
-            <p>軽井沢・御代田・佐久周辺がメインです。<br>出張費なしで伺えます。<br>長野県内のその他エリアは出張費を<br>別途いただく場合があります。<br>都市部は飛行許可の関係で<br>基本的にお受けできません。</p>
+            <h4 data-i18n="contact.area.title">活動エリア</h4>
+            <p data-i18n="contact.area.desc">軽井沢・御代田・佐久周辺がメインです。出張費なしで伺えます。長野県内のその他エリアは出張費を別途いただく場合があります。都市部は飛行許可の関係で基本的にお受けできません。</p>
           </div>
           <div class="contact__info-item">
-            <h4>対応時間</h4>
-            <p>平日 9:00 – 18:00<br>土日祝も相談可</p>
+            <h4 data-i18n="contact.hours.title">対応時間</h4>
+            <p data-i18n-html="contact.hours.desc">平日 9:00 – 18:00<br>土日祝も相談可</p>
           </div>
         </div>
       </div>
@@ -432,14 +439,13 @@
       <div class="footer__inner">
         <div class="footer__brand">
           <a href="#hero" class="nav__logo">KARUIZAWA<span>AERIAL</span></a>
-          <p>軽井沢の空から届ける、新しい視点。</p>
+          <p data-i18n="footer.tagline">軽井沢の空から届ける、新しい視点。</p>
         </div>
         <div class="footer__links">
-          <a href="#services">サービス</a>
-          <a href="#portfolio">実績</a>
-          <a href="#process">流れ</a>
-          <a href="#pricing">料金</a>
-          <a href="#contact">お問い合わせ</a>
+          <a href="#services" data-i18n="footer.services">サービス</a>
+          <a href="#process" data-i18n="footer.process">流れ</a>
+          <a href="#pricing" data-i18n="footer.pricing">料金</a>
+          <a href="#contact" data-i18n="footer.contact">お問い合わせ</a>
         </div>
       </div>
       <div class="footer__bottom">
